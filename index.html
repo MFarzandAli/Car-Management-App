@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="top">Car Management App</h1>
+    <div class="background-img"></div>
+
+    <div class="welcome-box" id="welcomeBox">
+        <h1>Welcome to Car Management App</h1>
+        <p>Discover a smarter way to explore your dream car! Our Car Management App is designed to make your search
+            simple, quick, and exciting. From classic favorites to modern powerhouses, we bring every car detail right
+            to your fingertips. Just enter your preferred brand and model, and let the magic begin your perfect match
+            awaits you! Whether you’re curious about specs, style, or performance, this platform helps you find the car
+            that truly fits your personality and lifestyle.</p>
+        <button class="start-btn" onclick="showForm()">Find Your Car</button>
+    </div>
+
+    <div class="form-box" id="form-box">
+        <h2>Enter Car Details</h2>
+        <label>Brand</label>
+        <input type="text" id="brand" placeholder="e.g. Toyota" onkeydown="info(event)">
+        <label>Model Name</label>
+        <input type="text" id="model" placeholder="e.g. Corolla" onkeydown="info(event)">
+        <label>Model Year</label>
+        <input type="number" id="year" placeholder="e.g. 2020, 2025 (Optional)" onkeydown="info(event)">
+        <label>Color</label>
+        <input type="text" id="color" placeholder="e.g. Red, Blue (Optional)" onkeydown="info(event)">
+        <br><br>
+        <button class="button" onclick="findCar()">Submit</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
